@@ -1,4 +1,4 @@
-#3.	Elaborar un programa en Python que permita crear una lista con los números enteros 
+#3.	Elaborar un programa en Python que permita crear una lista con los numeros enteros 
 #   entre 1 y 20  (x) y de forma paralela otra lista con enteros aleatorios entre 1 y 6.
 
 !pip install matplotlib
@@ -18,9 +18,9 @@ y = [random.randint(1, 6) for i in range(20)]
 print("Lista x:", x)
 print("Lista y:", y)
 
-#3.2 Crear el gráfico de barras
+#3.2 Crear el grafico de barras
 plt.bar(x, y)
-plt.title("Gráfico de barras")
+plt.title("Grafico de barras")
 plt.xlabel("X")
 plt.ylabel("Y")
 plt.show()
@@ -28,4 +28,4 @@ plt.show()
 #3.3 Mostrar las medidas estadísticas de la lista y
 print("Media:", np.mean(y))
 print("Mediana:", np.median(y))
-print("Desviación estándar:", np.std(y))
+print("Desviacion estandar:", np.std(y))
