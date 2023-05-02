@@ -1,4 +1,6 @@
-#!pip install matplotlib
+#4.	Se tiene una tabla con el número de unidades producidas mes a mes por las máquinas de una empresa:
+
+!pip install matplotlib
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -15,11 +17,11 @@ produccion = {"maquina1": [6261,205,6801,4314,9262,6165,9277,4593,1764,1021,1988
 # Crear un DataFrame a partir de los datos de producción
 df = pd.DataFrame(produccion)
 
-# Calcular las medidas estadísticas básicas para cada máquina
+#4.1 Calcular las medidas estadísticas básicas para cada máquina
 medidas = df.describe()
 print(medidas)
 
-# Generar el gráfico de barras para la máquina3
+#4.2 Generar el gráfico de barras para la máquina3
 ax = df['maquina3'].plot.bar(x=df.index, y='maquina3', rot=0)
 ax.set_xlabel("Mes")
 ax.set_ylabel("Unidades producidas")
